@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Samantha Desronvil</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="design.css" />
+
+    </head>
+    <body>
+<header class="main-header">
+    <nav class="nav main-nav">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+         <li><a href="AboutMe.html">About Me</a></li>
+            <li><a href="ContactMe.html">Contact</a></li>
+            <li><a href="MyWork.html">My Work</a></li>
+            <li><a href="store.html ">My Store</a></li>
+
+            
+        </ul>
+    </nav>
+    <h1 class="my-name my-name-large">Samantha Desronvil</h1>
+</header>
+</header>
+
+
+<p>Today's date is  <span id="date"></span></p>
+<p>The current time is <span id="clock"></span></p>
+
+         
+
+          <script>
+            // function to update the clock
+            function updateClock() {
+              var now = new Date();
+              var date = now.toLocaleDateString();
+              var time = now.toLocaleTimeString();
+              document.getElementById("date").innerHTML = date;
+              document.getElementById("clock").innerHTML = time;
+            }
+
+            // update the clock every second
+            setInterval(updateClock, 1000);
+          </script>
+
+
+<section class="content-section container" style="background-color: black">
+    <h2 class="section-header">About</h2>
+    <img class="about-my-image" src="sam.JPG" width="210" height="210"
+</section>
+    
+
+            
+                <p> My name is Samantha R Desronvil. The R stands for real. LOL. I am 26 years old, and live in Union NJ. I am a senior studying Computer Science Information Systems at Kean University, 
+                    I will be graduating Spring May 2023 where I will get my bachelors degree. 
+                     I have expeience in  various coding languages which include but not limited to, HTML/CSS,PHP,SQL, & C.
+                       I am currently working on a project using Web scraping through python to collect current and historical data to generate movie recommendations based on user selections.
+                        I love learning new things and meeting new people . 
+              
+                </p> 
+                    <p> My favorite field in computer science, is software engineering and cloud development. I want to make alot of money and work for a good company were I will learn and create new systems. 
+                        I would like to stay within my company and grow into a leadership role. I plan to go back to college in a few years for my MBA. Eventually I want to become a professor and teach students.
+                         </p>
+                        </section>
+                    
+                <footer class="main-footer">
+                    <div class="container main-footer-container">
+                        <h3 class="my-name">Samantha Desronvil Media</h3>
+                        <ul class="nav footer-nav">
+                            <li>
+                                <a href="https://twitter.com/Sammysam_iscool" target="_blank">
+                                    <img src="twitter.png"
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/sammypips" target="_blank">
+                                    <img src="GitHub.png"
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/samantha-desronvil-951a0b1a3/" target="_blank">
+                                    <img src="linkedin.png" 
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                </footer>
+
+</body>
+ </html>

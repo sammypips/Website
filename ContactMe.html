@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Samantha Desronvil</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="design.css" />
+        <style>
+            h1{ text-align: center;
+                color:orangered;
+        
+            }
+        </style>
+
+    </head>
+    <body>
+<header class="main-header">
+    <nav class="nav main-nav">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+         <li><a href="AboutMe.html">About Me</a></li>
+            <li><a href="ContactMe.html">Contact</a></li>
+            <li><a href="MyWork.html">My Work</a></li>
+            <li><a href="store.html ">My Store</a></li>
+
+            
+        </ul>
+    </nav>
+    <h1 class="my-name my-name-large"> Samantha Desronvil </h1>
+   
+    
+
+</header>
+
+
+
+<p>Today's date is  <span id="date"></span></p>
+<p>The current time is <span id="clock"></span></p>
+
+         
+
+          <script>
+            // function to update the clock
+            function updateClock() {
+              var now = new Date();
+              var date = now.toLocaleDateString();
+              var time = now.toLocaleTimeString();
+              document.getElementById("date").innerHTML = date;
+              document.getElementById("clock").innerHTML = time;
+            }
+
+            // update the clock every second
+            setInterval(updateClock, 1000);
+          </script>
+
+
+
+  <head>
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <form method="post" action="contact.php">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="email">Subject:</label>
+      <input type="subject" id="subject" name="subject" required><br><br>
+      
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" required></textarea><br><br>
+      
+      <input type="submit" name="submit" value="Submit">
+    </form>
+  </body>
+</html>
+
+       
+
+
+   </section>
+
+   <footer class="main-footer">
+    <div class="container main-footer-container">
+        <h3 class="my-name">Samantha Desronvil Media</h3>
+        <ul class="nav footer-nav">
+            <li>
+                <a href="https://twitter.com/Sammysam_iscool" target="_blank">
+                    <img src="twitter.png"
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/sammypips" target="_blank">
+                    <img src="GitHub.png"
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/samantha-desronvil-951a0b1a3/" target="_blank">
+                    <img src="linkedin.png" 
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+
+</footer>
+
+</body>
+</html>
+   

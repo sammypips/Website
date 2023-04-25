@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Show and hide name</title>
+	<script>
+		function toggleNames() {
+			var firstName = document.getElementById("Samantha");
+			var middleName = document.getElementById("R");
+			var lastName = document.getElementById("Desronvil");
+			if (firstName.style.display === "none") {
+				firstName.style.display = "block";
+				if (middleName !== null) {
+					middleName.style.display = "block";
+				}
+				lastName.style.display = "block";
+			} else {
+				firstName.style.display = "Samantha";
+				if (middleName !== null) {
+					middleName.style.display = "R";
+				}
+				lastName.style.display = "Desronvil";
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Show/Hide Name</h1>
+	<button onclick="toggleNames()">Show/Hide Names</button>
+	<p id="first-name">First Name: Samantha</p>
+	<p id="middle-name" style="display:none;">Middle Name: R</p>
+	<p id="last-name">Last Name: Desronvil</p>
+</body>
+</html>
